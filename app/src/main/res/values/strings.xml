@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">android nang cao</string>
+    <string name="input_email">Nhập email</string>
+    <string name="input_password">Nhập mật khẩu</string>
+    <string name="login">Đăng nhập</string>
+    <string name="logout">Đăng xuất</string>
+    <string name="forgot_password">Quên mật khẩu</string>
+    <string name="register">Đăng ký</string>
+    <string name="have_account">Đã có tài khoản?</string>
+    <string name="input_repassword">Nhập lại mật khẩu</string>
+    <string name="authentic">Xác thực</string>
+    <string name="title_activity_main_logged_admin">MainActivityLoggedAdmin</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="search_hint">Tìm kiếm</string>
+    <string name="quantity">Số lượng:</string>
+    <string name="feedback">Phản hồi</string>
+    <string name="processing_order">Đang xử lý</string>
+    <string name="done_order">Hoàn thành</string>
+    <string name="account">Tài khoản</string>
+    <string name="resume">Thông tin cá nhân</string>
+    <string name="revenue_statistics">Thống kê thu nhập</string>
+    <string name="contact">Liên hệ</string>
+    <string name="price">Giá</string>
+    <string name="discount">Khuyến mãi</string>
+    <string name="url_img">Link ảnh</string>
+    <string name="url_img_banner">Link ảnh banner</string>
+    <string name="product">Sản phẩm</string>
+    <string name="add_product">Thêm sản phẩm</string>
+    <string name="name_product">Tên sản phẩm</string>
+    <string name="order">Đơn hàng</string>
+    <string name="description">Mô tả</string>
+    <string name="add">Thêm</string>
+    <string name="edit">Sửa</string>
+    <string name="edit_product">Sửa sản phẩm</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
