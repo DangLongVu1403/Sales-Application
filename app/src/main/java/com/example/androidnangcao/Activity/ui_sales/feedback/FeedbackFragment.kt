@@ -1,11 +1,13 @@
 package com.example.androidnangcao.Activity.ui_sales.feedback
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.androidnangcao.Activity.DetailFeedbackActivity
 import com.example.androidnangcao.Adapter.FeedbackAdapter
 import com.example.androidnangcao.Adapter.ItemAdapter
 import com.example.androidnangcao.Interface.RecyclerViewOnClick
@@ -33,7 +35,9 @@ class FeedbackFragment : Fragment() {
 
         val adapterListFeedback = FeedbackAdapter(listFeedback,object : RecyclerViewOnClick {
             override fun onClickItem(pos: Int) {
-
+                val intent = Intent(requireContext(),DetailFeedbackActivity::class.java)
+                intent.putExtra("Feedback",listFeedback[pos])
+                startActivity(intent)
             }
         })
         var feedbackList = binding.rvListFeedback

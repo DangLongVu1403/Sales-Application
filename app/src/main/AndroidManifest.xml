@@ -3,6 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -13,7 +15,20 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidNangCao"
+        android:networkSecurityConfig="@xml/network_security_config"
         tools:targetApi="31">
+        <activity
+            android:name=".Activity.MainActivityLoggedUsers"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.StatisticalRevenueActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.InforStoreActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.DetailFeedbackActivity"
+            android:exported="false" />
         <activity
             android:name=".Activity.AddItemActivity"
             android:exported="false" />

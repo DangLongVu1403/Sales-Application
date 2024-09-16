@@ -55,4 +55,7 @@ dependencies {
     androidTestImplementation(libs.androidx.espresso.core)
     implementation("androidx.core:core:1.10.1")
     implementation ("com.squareup.picasso:picasso:2.71828")
+    implementation ("com.google.code.gson:gson:2.11.0")
+    implementation ("com.squareup.retrofit2:retrofit:2.1.0")
+    implementation ("com.squareup.retrofit2:converter-gson:2.1.0")
 }

@@ -5,7 +5,6 @@ import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
 import androidx.appcompat.app.AppCompatActivity
-import com.example.androidnangcao.Notification.NotificationHelper
 import com.example.androidnangcao.R
 
 class MainActivity : AppCompatActivity() {

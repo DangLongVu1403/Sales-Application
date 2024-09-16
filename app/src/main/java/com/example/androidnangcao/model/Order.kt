@@ -4,5 +4,6 @@ data class Order(
     val urlImg: String,
     val nameItem: String,
     val total: String,
-    val quantity: Int
+    val quantity: Int,
+    val status: Boolean
 )

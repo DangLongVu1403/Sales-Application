@@ -1,10 +1,13 @@
 package com.example.androidnangcao.Activity.ui_sales.individual
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import com.example.androidnangcao.Activity.InforStoreActivity
+import com.example.androidnangcao.Activity.StatisticalRevenueActivity
 import com.example.androidnangcao.databinding.FragmentIndividualBinding
 
 class IndividualFragment : Fragment() {
@@ -19,6 +22,23 @@ class IndividualFragment : Fragment() {
     ): View {
         _binding = FragmentIndividualBinding.inflate(inflater, container, false)
         val root: View = binding.root
+        binding.viewProfile.setOnClickListener {
+            val intent = Intent(requireActivity(), InforStoreActivity::class.java)
+            startActivity(intent)
+        }
+
+        binding.viewRevenueStatistics.setOnClickListener {
+            val intent = Intent(requireActivity(), StatisticalRevenueActivity::class.java)
+            startActivity(intent)
+        }
+
+        binding.viewContact.setOnClickListener {
+
+        }
+
+        binding.viewLogout.setOnClickListener {
+
+        }
         return root
     }
 

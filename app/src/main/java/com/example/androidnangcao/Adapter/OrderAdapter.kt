@@ -29,11 +29,17 @@ class OrderAdapter(private var orderList: MutableList<Order>,
             val tvNameItem = findViewById<TextView>(R.id.tvNameItemOrder)
             val tvQuantity = findViewById<TextView>(R.id.tvQuantityOrder)
             val tvTotal = findViewById<TextView>(R.id.tvTotal)
+            val tvFollowOrder = findViewById<TextView>(R.id.tvFollowOrder)
 
             val order = orderList[position]
             tvNameItem.text = order.nameItem
             tvQuantity.text = order.quantity.toString()
             tvTotal.text = order.total
+            if (order.status) {
+                tvFollowOrder.visibility = View.GONE
+            } else {
+                tvFollowOrder.visibility = View.VISIBLE
+            }
 
             if (order.urlImg.isNotEmpty()) {
                 Picasso.get().load(order.urlImg).into(imgItem)

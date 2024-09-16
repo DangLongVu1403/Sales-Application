@@ -24,6 +24,7 @@ private const val ARG_PARAM2 = "param2"
 class OrderFragment : Fragment() {
     private var listOrder: MutableList<Order> = mutableListOf()
     private lateinit var binding: FragmentOrderBinding
+    private var statusFilter: Boolean = true
     // TODO: Rename and change types of parameters
     private var param1: String? = null
     private var param2: String? = null
@@ -40,40 +41,39 @@ class OrderFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+        statusFilter = arguments?.getBoolean("status") ?: true
         binding = FragmentOrderBinding.inflate(inflater, container, false)
-        listOrder.add(Order("", "dangvu@gmail.com","Thành tiền: 180 000 VND",6))
-        listOrder.add(Order("", "dangvu@gmail.com","Thành tiền: 180 000 VND",6))
-        listOrder.add(Order("", "dangvu@gmail.com","Thành tiền: 180 000 VND",6))
+        listOrder.add(Order("", "dangvu@gmail.com","Thành tiền: 180 000 VND",6,true))
+        listOrder.add(Order("", "dangvu@gmail.com","Thành tiền: 180 000 VND",6,false))
+        listOrder.add(Order("", "dangvu@gmail.com","Thành tiền: 180 000 VND",6,true))
+        listOrder.add(Order("", "dangvu@gmail.com","Thành tiền: 180 000 VND",6,false))
+        listOrder.add(Order("", "dangvu@gmail.com","Thành tiền: 180 000 VND",6,true))
 
-        val adapterListFeedback = OrderAdapter(listOrder,object : RecyclerViewOnClick {
+        // Lọc danh sách theo trạng thái
+        val filteredList = listOrder.filter { it.status == statusFilter }.toMutableList()
+
+        val adapterListFeedback = OrderAdapter(filteredList, object : RecyclerViewOnClick {
             override fun onClickItem(pos: Int) {
-
+                // Xử lý khi click item
             }
         })
-        var orderList = binding.rvListOrder
-        orderList.layoutManager = LinearLayoutManager(context, LinearLayoutManager.VERTICAL,false)
+
+        val orderList = binding.rvListOrder
+        orderList.layoutManager = LinearLayoutManager(context, LinearLayoutManager.VERTICAL, false)
         orderList.adapter = adapterListFeedback
         orderList.setHasFixedSize(true)
+
         return binding.root
     }
 
     companion object {
-        /**
-         * Use this factory method to create a new instance of
-         * this fragment using the provided parameters.
-         *
-         * @param param1 Parameter 1.
-         * @param param2 Parameter 2.
-         * @return A new instance of fragment ProcessingFragment.
-         */
-        // TODO: Rename and change types and number of parameters
-        @JvmStatic
-        fun newInstance(param1: String, param2: String) =
-            OrderFragment().apply {
-                arguments = Bundle().apply {
-                    putString(ARG_PARAM1, param1)
-                    putString(ARG_PARAM2, param2)
-                }
-            }
+        // Hàm tạo mới Fragment với trạng thái được truyền vào
+        fun newInstance(status: Boolean): OrderFragment {
+            val fragment = OrderFragment()
+            val args = Bundle()
+            args.putBoolean("status", status)
+            fragment.arguments = args
+            return fragment
+        }
     }
 }
