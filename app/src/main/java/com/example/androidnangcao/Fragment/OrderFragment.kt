@@ -1,18 +1,16 @@
-package com.example.androidnangcao.Frament
+package com.example.androidnangcao.Fragment
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.androidnangcao.Adapter.OrderAdapter
 import com.example.androidnangcao.Interface.RecyclerViewOnClick
 import com.example.androidnangcao.databinding.FragmentOrderBinding
 import com.example.androidnangcao.model.Order
 
-// TODO: Rename parameter arguments, choose names that match
-// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
 private const val ARG_PARAM1 = "param1"
 private const val ARG_PARAM2 = "param2"
 
@@ -43,11 +41,11 @@ class OrderFragment : Fragment() {
     ): View? {
         statusFilter = arguments?.getBoolean("status") ?: true
         binding = FragmentOrderBinding.inflate(inflater, container, false)
-        listOrder.add(Order("", "dangvu@gmail.com","Thành tiền: 180 000 VND",6,true))
-        listOrder.add(Order("", "dangvu@gmail.com","Thành tiền: 180 000 VND",6,false))
-        listOrder.add(Order("", "dangvu@gmail.com","Thành tiền: 180 000 VND",6,true))
-        listOrder.add(Order("", "dangvu@gmail.com","Thành tiền: 180 000 VND",6,false))
-        listOrder.add(Order("", "dangvu@gmail.com","Thành tiền: 180 000 VND",6,true))
+        listOrder.add(Order("", "dangvu@gmail.com", "Thành tiền: 180 000 VND", 6, true))
+        listOrder.add(Order("", "dangvu@gmail.com", "Thành tiền: 180 000 VND", 6, false))
+        listOrder.add(Order("", "dangvu@gmail.com", "Thành tiền: 180 000 VND", 6, true))
+        listOrder.add(Order("", "dangvu@gmail.com", "Thành tiền: 180 000 VND", 6, false))
+        listOrder.add(Order("", "dangvu@gmail.com", "Thành tiền: 180 000 VND", 6, true))
 
         // Lọc danh sách theo trạng thái
         val filteredList = listOrder.filter { it.status == statusFilter }.toMutableList()

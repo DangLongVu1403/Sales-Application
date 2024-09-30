@@ -1,4 +1,4 @@
-package com.example.androidnangcao.Activity.ui_sales.individual
+package com.example.androidnangcao.Fragment.ui_sales.individual
 
 import android.content.Intent
 import android.os.Bundle

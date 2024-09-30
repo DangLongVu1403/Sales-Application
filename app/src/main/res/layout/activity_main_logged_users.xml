@@ -14,7 +14,7 @@
         android:layout_height="0dp"
         android:layout_weight="1"
         app:defaultNavHost="true"
-        app:navGraph="@navigation/mobile_navigation_sales" />
+        app:navGraph="@navigation/mobile_navigation_users" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/nav_view"
@@ -22,6 +22,6 @@
         android:layout_height="60dp"
         android:background="@color/black"
         app:labelVisibilityMode="unlabeled"
-        app:menu="@menu/bottom_nav_menu_sales" />
+        app:menu="@menu/bottom_nav_menu_users" />
 
 </LinearLayout>

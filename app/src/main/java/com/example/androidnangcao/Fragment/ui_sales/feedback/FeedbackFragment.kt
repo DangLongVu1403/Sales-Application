@@ -1,4 +1,4 @@
-package com.example.androidnangcao.Activity.ui_sales.feedback
+package com.example.androidnangcao.Fragment.ui_sales.feedback
 
 import android.content.Intent
 import android.os.Bundle
@@ -9,11 +9,9 @@ import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.androidnangcao.Activity.DetailFeedbackActivity
 import com.example.androidnangcao.Adapter.FeedbackAdapter
-import com.example.androidnangcao.Adapter.ItemAdapter
 import com.example.androidnangcao.Interface.RecyclerViewOnClick
 import com.example.androidnangcao.databinding.FragmentFeedbackBinding
 import com.example.androidnangcao.model.Feedback
-import com.example.androidnangcao.model.Item
 
 class FeedbackFragment : Fragment() {
 

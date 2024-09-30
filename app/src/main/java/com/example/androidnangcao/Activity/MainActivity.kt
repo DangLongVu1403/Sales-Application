@@ -15,10 +15,10 @@ class MainActivity : AppCompatActivity() {
         // Sử dụng Handler để trì hoãn việc chuyển đổi Activity
         Handler(Looper.getMainLooper()).postDelayed({
             // Chuyển sang Activity khác sau 5 giây
-            val intent = Intent(this, LoginActivity::class.java)
+            val intent = Intent(this, MainActivityLoggedUsers::class.java)
             startActivity(intent)
             finish() // Để đóng MainActivity sau khi chuyển đổi
-        }, 1000) // 5000 milliseconds = 5 seconds
+        }, 100) // 5000 milliseconds = 5 seconds
 
 //        val notificationHelper = NotificationHelper(this)
 //

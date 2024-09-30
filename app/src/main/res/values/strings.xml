@@ -58,6 +58,7 @@
     <string name="error_password_not_match">Mật khẩu không khớp</string>
     <string name="error_invalid_email">Email không hợp lệ</string>
     <string name="error_empty_repassword">Nhập mật khẩu</string>
+    <string name="today_is_suggestion">Gợi ý hôm nay</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>

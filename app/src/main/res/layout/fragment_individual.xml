@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Activity.ui_sales.individual.IndividualFragment">
+    tools:context=".Fragment.ui_sales.individual.IndividualFragment">
 
     <TextView
         android:id="@+id/textView"

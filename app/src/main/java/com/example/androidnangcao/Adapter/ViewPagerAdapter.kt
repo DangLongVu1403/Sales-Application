@@ -3,7 +3,7 @@ package com.example.androidnangcao.Adapter
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentActivity
 import androidx.viewpager2.adapter.FragmentStateAdapter
-import com.example.androidnangcao.Frament.OrderFragment
+import com.example.androidnangcao.Fragment.OrderFragment
 
 class ViewPagerAdapter(fragmentActivity: FragmentActivity) : FragmentStateAdapter(fragmentActivity) {
 

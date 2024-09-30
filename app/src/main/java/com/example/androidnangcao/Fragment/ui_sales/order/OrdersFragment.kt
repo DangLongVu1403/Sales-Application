@@ -1,4 +1,4 @@
-package com.example.androidnangcao.Activity.ui_sales.order
+package com.example.androidnangcao.Fragment.ui_sales.order
 
 import android.os.Bundle
 import android.view.LayoutInflater

@@ -9,5 +9,6 @@ data class Item(
     val price: String,
     val description: String,
     val quantity: Int,
-    val discountPercent: Int
+    val discountPercent: Int,
+    val sold: Int
 ) : Serializable

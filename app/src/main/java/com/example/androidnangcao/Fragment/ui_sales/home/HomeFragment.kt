@@ -1,4 +1,4 @@
-package com.example.androidnangcao.Activity.ui_sales.home
+package com.example.androidnangcao.Fragment.ui_sales.home
 
 import android.content.Intent
 import android.os.Bundle
@@ -47,9 +47,9 @@ class HomeFragment : Fragment() {
         }
 
         // Thêm dữ liệu mẫu vào listItem
-        listItem.add(Item("", "", "Áo polo", "180000", "áo thiết kế đẹp mắt", 100, 10))
-        listItem.add(Item("", "", "Áo thun", "150000", "áo chất lượng cao", 200, 20))
-        listItem.add(Item("", "", "Áo sơ mi", "200000", "áo lịch sự", 150, 30))
+        listItem.add(Item("", "", "Áo polo", "180000", "áo thiết kế đẹp mắt", 100, 10,10))
+        listItem.add(Item("", "", "Áo thun", "150000", "áo chất lượng cao", 200, 20,10))
+        listItem.add(Item("", "", "Áo sơ mi", "200000", "áo lịch sự", 150, 30,10))
 
         // Khởi tạo danh sách lọc ban đầu với toàn bộ sản phẩm
         filteredList.addAll(listItem)

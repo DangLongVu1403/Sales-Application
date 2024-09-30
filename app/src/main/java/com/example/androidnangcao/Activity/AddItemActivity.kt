@@ -1,19 +1,13 @@
 package com.example.androidnangcao.Activity
 
-import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
-import com.example.androidnangcao.Activity.ui_sales.home.HomeFragment
 import com.example.androidnangcao.R
 import com.example.androidnangcao.databinding.ActivityAddItemBinding
 import com.example.androidnangcao.model.Item
-import java.io.Serializable
 
 class AddItemActivity : AppCompatActivity() {
     private lateinit var binding: ActivityAddItemBinding
